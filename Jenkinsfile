@@ -75,7 +75,7 @@ pipeline {
             }
         }
         
-        stage('post-deployment-tests'){
+        stage('Test regressivos em PROD'){
             steps {
                 sh "npm run e2e:prod"
             }
