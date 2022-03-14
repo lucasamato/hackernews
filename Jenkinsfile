@@ -74,6 +74,12 @@ pipeline {
                 echo "Deploying"
             }
         }
+        
+        stage('post-deployment-tests'){
+            steps {
+                sh "npm run e2e:prod"
+            }
+        }
     }
 
    // post {
