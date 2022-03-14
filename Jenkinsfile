@@ -91,13 +91,13 @@ pipeline {
             
             //publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'cypress/reports', reportFiles: 'index.html', reportName: 'HTML_20Report', reportTitles: ''])
           //publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'mochawesome-report', reportFiles: 'index.html', reportName: 'HTML_Report', reportTitles: ''])  
-         publishHTML (target : [allowMissing: false,
-           alwaysLinkToLastBuild: true,
-           keepAll: true,
-           reportDir: 'cypress/reports',
-           reportFiles: 'index.html',
-           reportName: 'My Reports',
-           reportTitles: 'The Report'])
-        }
+        // publishHTML (target : [allowMissing: false,
+         //  alwaysLinkToLastBuild: true,
+         //  keepAll: true,
+         //  reportDir: 'cypress/reports',
+         //  reportFiles: 'index.html',
+        //   reportName: 'My Reports',
+       //reportTitles: 'The Report'])
+       /// }
     }
 }
