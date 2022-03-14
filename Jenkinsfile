@@ -57,7 +57,7 @@ pipeline {
           steps {
                // sh "npm install -D"
                 sh "npm ci"
-                sh "npm run e2e:ci"
+                sh "npm run e2e:ci --browser ${BROWSER}"
               
             }
         }
