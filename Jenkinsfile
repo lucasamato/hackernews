@@ -98,6 +98,6 @@ pipeline {
          //  reportFiles: 'index.html',
         //   reportName: 'My Reports',
        //reportTitles: 'The Report'])
-       /// }
+        }
     }
 }
