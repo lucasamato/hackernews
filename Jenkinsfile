@@ -52,15 +52,13 @@ pipeline {
          }
     }
         
-        stage('Testing') {
+        stage('Run end-to-end tests 🧪') {
           
           steps {
                // sh "npm install -D"
                 sh "npm ci"
-                //sh "npm run cy:run --browser ${BROWSER}"
-                //sh "npm run report:jenkins"
-                sh "npm run cy:run:cucumber --browser ${BROWSER}"
-                sh "npm run report:cucumber"
+                sh "npm run e2e:ci"
+              
             }
         }
       
